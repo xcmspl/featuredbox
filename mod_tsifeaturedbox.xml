@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1" client="site" method="upgrade">
+    <name>TSI Featured Box</name>
+    <author>Design Studio WWW</author>
+	<copyright>Copyright (C) 2011-2016 Design Studio WWW All rights reserved.</copyright>
+    <version>1.0.0</version>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html</license>
+    <description>The module display text with image.</description>
+	<languages>
+		<language tag="en-GB">en-GB.mod_tsifeaturedbox.ini</language>
+		<language tag="en-GB">en-GB.mod_tsifeaturedbox.sys.ini</language>
+		<language tag="pl-PL">pl-PL.mod_tsifeaturedbox.ini</language>
+		<language tag="pl-PL">pl-PL.mod_tsifeaturedbox.sys.ini</language>
+	</languages>
+    <files>
+        <filename>mod_tsifeaturedbox.xml</filename>
+        <filename module="mod_tsifeaturedbox">mod_tsifeaturedbox.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+		<filename>assest/mod_tsifeaturedbox.css</filename>
+		<filename>assest/mod_tsifeaturedbox.js</filename>
+    </files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="Image" class="" type="media" default="" label="FEATUREDBOX_IMAGE" description="" />
+				<field name="Title" type="text" label="FEATUREDBOX_TITLE" description="" />
+				<field name="Text"  type="textarea" default="" label="FEATUREDBOX_TEXT"/>
+				<field name="Anchor" type="text" label="FEATUREDBOX_ANCHOR" description="" default="more..."/>
+				<field name="Link" type="text" label="FEATUREDBOX_LINK" description="" default="http://www.tsi.info.pl"/>
+				<field name="ImagePosition" type="radio" class="btn-group btn-group-yesno" default="top" label="FEATUREDBOX_IMAGEPOSITION" description="">
+					<option value="none">FEATUREDBOX_IMAGEPOSITION_NONE</option>
+					<option value="top">FEATUREDBOX_IMAGEPOSITION_TOP</option>
+					<option value="left">FEATUREDBOX_IMAGEPOSITION_LEFT</option>
+					<option value="right">FEATUREDBOX_IMAGEPOSITION_RIGHT</option>
+				</field>
+			</fieldset>
+			
+			<fieldset name="imagesettings" label="FEATUREDBOX_IMAGE_SETS">
+				<field name="ImageType" type="radio" class="btn-group btn-group-yesno" default="square" label="FEATUREDBOX_IMAGE_TYPE" description="">
+					<option value="square">FEATUREDBOX_IMAGE_SQUARE</option>
+					<option value="circle">FEATUREDBOX_IMAGE_CIRCLE</option>
+				</field>
+				<field name="ImageBorder" type="radio" class="btn-group btn-group-yesno" default="0" label="FEATUREDBOX_IMAGE_BORDER" description="">
+					<option value="0">FEATUREDBOX_IMAGE_BORDER_NO</option>
+					<option value="1">FEATUREDBOX_IMAGE_BORDER_YES</option>
+				</field>
+				<field name="ImageBorderWidth" type="number" default="3" label="FEATUREDBOX_IMAGE_BORDER_WIDTH" description="" min="1" step="1" />
+				<field name="ImageBorderColor" type="color" default="#333333" label="FEATUREDBOX_IMAGE_BORDER_COLOR" description="" />
+			</fieldset>
+			
+			<fieldset name="titlesettings" label="FEATUREDBOX_TITLE_SETS">
+				<field name="TitleShow" type="radio" class="btn-group btn-group-yesno" default="1" label="FEATUREDBOX_TITLE_SHOW" description="">
+					<option value="0">FEATUREDBOX_TITLE_SHOW_NO</option>
+					<option value="1">FEATUREDBOX_TITLE_SHOW_YES</option>
+				</field>
+				<field name="TitleSize" type="number" default="26" label="FEATUREDBOX_TITLE_SIZE" description="" min="0" step="1" />
+				<field name="TitleColor" type="color" default="#333333" label="FEATUREDBOX_TITLE_COLOR" description="" />
+				<field name="TitleBold" type="radio" class="btn-group btn-group-yesno" default="0" label="FEATUREDBOX_TITLE_BOLD" description="">
+					<option value="0">FEATUREDBOX_TITLE_SHOW_NO</option>
+					<option value="1">FEATUREDBOX_TITLE_SHOW_YES</option>
+				</field>
+				<field name="TitleBorder" type="radio" class="btn-group btn-group-yesno" default="Bottom" label="FEATUREDBOX_TITLE_BORDER" description="">
+					<option value="Top">FEATUREDBOX_TITLE_BORDER_TOP</option>
+					<option value="Bottom">FEATUREDBOX_TITLE_BORDER_BOTTOM</option>
+					<option value="TopAndBottom">FEATUREDBOX_TITLE_BORDER_TOP_AND_BOTTOM</option>
+				</field>
+				<field name="TitleBorderWidth" type="number" default="1" label="FEATUREDBOX_TITLE_BORDER_WIDTH" description="" min="0" step="1" />
+				<field name="TitleBorderColor" type="color" default="#333333" label="FEATUREDBOX_TITLE_BORDER_COLOR" description="" />
+			</fieldset>
+			
+			<fieldset name="moresettings" label="FEATUREDBOX_MORE_SETS">
+				<field name="MoreShow" type="radio" class="btn-group btn-group-yesno" default="1" label="FEATUREDBOX_MORE_SHOW" description="">
+					<option value="0">FEATUREDBOX_TITLE_SHOW_NO</option>
+					<option value="1">FEATUREDBOX_TITLE_SHOW_YES</option>
+				</field>
+				<field name="MoreSize" type="number" default="14" label="FEATUREDBOX_TITLE_SIZE" description="" min="0" step="1" />
+				<field name="MoreColor" type="color" default="#333333" label="FEATUREDBOX_TITLE_COLOR" description="" />
+				<field name="MoreColorHover" type="color" default="#ffffff" label="FEATUREDBOX_MORE_COLOR_HOVER" description="" />
+				<field name="MorePadding" type="number" default="15" label="FEATUREDBOX_MORE_PADDING" description="" min="0" step="1" />
+				<field name="MoreBgColor" type="color" default="#eeeeee" label="FEATUREDBOX_MORE_BGCOLOR" description="" />
+				<field name="MoreBgColorHover" type="color" default="#333333" label="FEATUREDBOX_MORE_BGCOLOR_HOVER" description="" />
+			</fieldset>
+		</fields>
+	</config>
+    
+</extension>
+
+

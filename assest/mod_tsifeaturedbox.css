@@ -1,0 +1,71 @@
+﻿*, *:before, *:after{
+  box-sizing: border-box;
+}
+.FeatBoxMoreBtn{
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;				
+}
+.FBFullWidth{
+	clear:both;
+	width:100%;				
+}
+.FBLeftImage, .FBRightImage{
+	width:50%;
+	float:left;				
+}
+.FBRight, .FBLeft{
+	width:50%;
+	float:left;				
+}
+.FBLeft{
+	padding-right:10px;				
+}
+.FBRight{
+	padding-left:10px;				
+}
+.FeatBoxtext{
+	padding:10px 0 10px 0;
+	text-align:justify;	
+	font-size:12px;			
+}
+.FeatBoxMore{
+	padding-top:20px;
+	text-align:center;				
+}
+.BtnLeft .FeatBoxMore{
+	text-align:left;				
+}
+.BtnRight .FeatBoxMore{
+	text-align:right;				
+}
+.FBFullWidth h3{
+	text-align:center;				
+}
+.FBLeft h3, .FBRight h3{
+	text-align:left;				
+}
+.FBFullWidth h3{
+	margin-top:10px;				
+}
+.circle{
+	-webkit-border-radius: 50%;
+	border-radius: 50%;	
+	overflow:hidden;		
+}
+.FeatBoxImage{
+	margin:0 auto 0 auto;				
+}
+@media all and (max-width: 1024px){	
+	.FBLeftImage, .FBRightImage{
+	width:100%;
+	float:none;				
+}
+.FBRight, .FBLeft{
+	width:100%;
+	float:none;				
+}
+
+}
