@@ -19,6 +19,6 @@
 </ul>
 
 <p>Demo 1: <a href="http://www.designcart.pl">Tworzenie sklepów internetowych</a> -> Obraz na górze w kształcie koła</p>
-<img src="http://www.designcart.pl/images/demo-1.jpg" alt="demo 1 sets" /><br/><br/><br/><br/>
+<img src="https://www.designcart.pl/images/demo-1.jpg" alt="demo 1 sets" /><br/><br/><br/><br/>
 <p>Demo 2: <a href="http://www.designcart.pl/sklep-internetowy.html">Towrzenie sklepu internetowego</a>-> Obraz po lewej stronie</p>
-<img src="http://www.designcart.pl/images/demo-2.jpg" alt="demo 2 sets" />
+<img src="https://www.designcart.pl/images/demo-2.jpg" alt="demo 2 sets" />
